@@ -10,12 +10,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Library CSS CDN go here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- Boostrap Library JS CDN  go here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
     <!-- Other libraries go here -->
 
     <!-- Link to styles of your own -->
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/style.css">
 
 </head>
 
@@ -26,6 +33,82 @@
     <!------------------------------>
     <!-- Stuff for body goes here -->
 
+    <!-- Navbar achieved -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.jpg" height="36">
+            </a>
+            <a class="navbar-brand" href="#">HowRu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-info-subtle" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The welcome bar -->
+    <div class="p-5 mb-4 bg-info-subtle rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Welcome to HowRu!</h1>
+            <p class="col-md-8 fs-4">Let's start connecting</p>
+
+            <button class="btn btn-info btn-lg" type="button">Login/Signup</button>
+
+            <!-- Add an onclick attribute to define click event handler -->
+            <!-- <button onclick="window.location.href='login.html'" class="btn btn-primary btn-lg" type="button">Login/Signup</button> -->
+        </div>
+    </div>
+
+    <!-- The Grid of cards -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="./images/drink1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Connect with other Users</h5>
+                    <p class="card-text">HowRu is a brand new wellness focused social media platform.</p>
+                    <a href="#" class="btn btn-info">more info</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="./images/drink2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Promoting Wellness</h5>
+                    <p class="card-text">An app focused on the well-being of users.</p>
+                    <a href="#" class="btn btn-info">more info</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="./images/drink3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Grow alongside millions</h5>
+                    <p class="card-text">Start using HowRu today.</p>
+                    <a href="#" class="btn btn-info">more info</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
